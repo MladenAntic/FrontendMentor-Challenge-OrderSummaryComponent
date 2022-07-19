@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background: url('images/pattern-background-desktop.svg') no-repeat;
+    overflow: hidden;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(224, 23%, 55%);
+    opacity: 0.5;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    z-index: 10;
+    margin: 150px auto;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.container img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content {
+    width: 85%;
+    margin: 20px auto 0;
+    text-align: center;
+}
+
+.content h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 30px;
+}
+
+.content .plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.content .plan .annual-plan {
+    display: flex;
+    align-items: center;
+}
+
+.content .plan .annual-plan img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.content .plan .annual-plan .annual-plan-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .plan .annual-plan .annual-plan-container .annual {
+    font-weight: 700;
+}
+
+.content .plan .annual-plan .annual-plan-container .price {
+    color: hsl(224, 23%, 55%);
+} 
+
+.content .plan .change-plan .change {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+
+.content .button {
+    display: block;
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px 50px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.content .plan .change-plan .change:hover,
+.content .button:hover {
+    opacity: 0.5;
+}
+
+.content .cancel-order {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.content .cancel-order:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+
+
